@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ef5b1f;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem ;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  background:url(../images/header_image.\ home.jpg);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  background-color:rgba(0, 0, 0, 0.5);
+  padding: 3rem 1rem;
+  max-width: 600px;
+  /* max-height: fit-content; */
+  margin: auto;
+  border-radius: 8px;
+}
+
+.search-box {
+  padding: 0.7rem 1rem;
+  width: 70%;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+} 
+
+.search-btn {
+  padding: 0.7rem 1rem;
+  border: none;
+  background-color:black;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.search-btn:hover{
+background-color: #ef5b1f;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.categories {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.categories h2 {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: #ef5b1f;
+}
+.card {
+  border:none;
+  padding: 0.7rem;
+  background-color: whitesmoke;
+  max-width: 280px;
+  max-height: 220px;
+  position: relative;
+}
+.card:hover{
+   transform: scale(1.1);
+  transition-duration: 2s;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.label{
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ef5b1f;
+  font-size: 14px;
+  padding: 4px 8px;
+  width: fit-content;
+  font-weight: bold;
+}
+.para{
+  border: 3px solid orange;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding: 0.7rem;
+}
+h2{
+  font-weight:1.5rem ;
+   text-decoration: underline;
+  text-decoration-color: #ef5b1f;
+  margin-left: 10px;
+}
+.card2{
+ border:none;
+  padding: 0.7rem;
+  background-color: white;
+  max-width: 280px;
+  max-height: 220px;
+  position: relative;
+}
+.card2:hover{
+    transform: scale(1.2);
+  transition-duration: 2s;
+}
+.categories2{
+   padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.card2 img{
+   width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.label2{
+  color: black;
+  font-weight: bold;
+}
