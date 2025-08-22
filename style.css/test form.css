@@ -1,0 +1,36 @@
+.bg{background-color: aqua;
+
+}
+h2{
+    text-align: center;
+}
+h4{
+    margin-left: 400px;
+}
+
+/* input{
+    width: 430px; height: 20px; margin-left: 140px;  */
+
+label{
+    display:inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+}
+input[type="radio"]{
+    margin-right: 6px;
+}
+button{
+width: 100px;
+height:30px;
+text-align: center;
+background-color: green;
+color: white;
+border:none;
+align-content: center;
+margin-left: 730px;
+}
+ .error { 
+      color: red; 
+      font-size: 0.85em; 
+      margin-left: 1rem; 
+ }

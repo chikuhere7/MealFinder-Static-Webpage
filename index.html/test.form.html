@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+     <link rel="stylesheet" href="../style.css/test form.css">
+    <script src="script2.js/form valid.js"></script>
+</head>
+<body>
+    <section class="bg">
+    <h2>Student Registration Form</h2>
+    
+    <h4>Roll No: <input type="text" id="roll" required style="width: 500px; height: 20px;margin-left: 250px;"></h4>
+    <div id="rollError" class="error"></div>
+
+    
+    <h4>Student Name(Full Name): <input type="text" id="fullname" required placeholder="full name" style="width: 500px; height: 20px; margin-left: 125px;"></h4>
+     <div id="fullnameError" class="error"></div>
+
+    <h4>Father's Name: <input type="text" id="Father" required style="width: 500px; height: 20px;margin-left: 200px;"></h4>
+    <div id="fatherError" class="error"></div>
+
+    <h4>Mother's Name: <input type="text" id="Mother" required style="width: 500px; height: 20px;margin-left: 195px;"></h4>
+    <div id="motherError" class="error"></div>
+
+    <h4>Date Of Birth(DD-MM-YYYY): <input type="date" id="date" required style="width: 395px; height: 20px;"></h4>
+    <div id="dateError" class="error"></div>
+
+    <h4>Mobile No.:<input type="text" id="number" required placeholder="+91-XXXXXXXXXX" style="width: 500px; height: 20px; margin-left: 230px;"></h4>
+    <div id="numberError" class="error"></div>
+
+    <h4>Email:<input type="text" id="email" required style="width: 500px; height: 20px;margin-left: 265px;"></h4>
+    <div id="emailError" class="error"></div>
+
+    <h4>Password: <input type="text" id="password" required style="width: 500px; height: 20px;margin-left: 235px;"></h4>
+    <div id="passwordError" class="error"></div>
+
+    <label><h4>Gender: 
+        <label> <input type="radio" name="Gender" value="male" style="margin-left: 0px;">Male</label> 
+        <label> <input type="radio" name="Gender" value="female" style="margin-left: 0px;">Female</label> 
+        <label> <input type="radio" name="Gender" value="other" style="margin-left: 0px;">Other</label></h4></label>
+        <div id="genderError" class="error"></div>
+
+
+       <label> <h4>Department:
+             <label> <input type="radio" required name="department" value="CSE">CSE</label> 
+        <label> <input type="radio" name="department" value="CIVIL" >CIVIL</label> 
+        <label> <input type="radio" name="department" value="IT" >IT</label>
+        <label> <input type="radio" name="department" value="CSE">ECE</label> 
+        <label> <input type="radio" name="department" value="CIVIL">MECH</label> 
+        </h4></label>
+        <div id="departmentError" class="error"></div>
+
+        <!-- <h4>Course:Name <input type="text" placeholder="+91-XXXXXXXXXX" style="width: 430px; height: 20px;"></h4> -->
+
+         <h4>Student Photo:
+            <form action="/upload" method="post" enctype="multipart/form-data">
+
+  <!-- <label for="resume">Upload your file:</label> -->
+  <input type="file" id="resume" name="resume">
+  <br><br>
+
+</form>
+   </h4>
+   <h4>Address:<input type="text" required style="width: 500px; height: 60px;margin-left: 250px;"></h4>
+
+   <!-- <input type="submit" value="Register"> -->
+
+    <button type="submit" style="text-align: center;">Register</button>
+
+    </section>
+
+</body>
+</html>

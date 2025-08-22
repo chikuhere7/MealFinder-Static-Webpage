@@ -1,0 +1,92 @@
+!<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="../style.css/form2.css">
+  <script src="../script.js/form2.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Registration Form</h2>
+
+  <form id="studentForm">
+
+    <!-- Roll No -->
+    <label>Roll No:</label>
+    <input type="text" id="roll" name="roll">
+    <div class="error" id="rollError"></div>
+
+    <!-- Student Name -->
+    <label>Student Name (Full Name):</label>
+    <input type="text" id="name" name="name" placeholder="full name">
+    <div class="error" id="nameError"></div>
+
+    <!-- Father's Name -->
+    <label>Father's Name:</label>
+    <input type="text" id="father" name="father">
+    <div class="error" id="fatherError"></div>
+
+    <!-- Mother's Name -->
+    <label>Mother's Name:</label>
+    <input type="text" id="mother" name="mother">
+    <div class="error" id="motherError"></div>
+
+    <!-- Date of Birth -->
+    <label>Date Of Birth (DD-MM-YYYY):</label>
+    <input type="date" id="dob" name="dob">
+    <div class="error" id="dobError"></div>
+
+    <!-- Mobile No -->
+    <label>Mobile No.:</label>
+    <input type="text" id="mobile" name="mobile" placeholder="+91-XXXXXXXXXX">
+    <div class="error" id="mobileError"></div>
+
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="email" id="email" name="email">
+    <div class="error" id="emailError"></div>
+
+    <!-- Password -->
+    <label>Password:</label>
+    <input type="password" id="password" name="password">
+    <div class="error" id="passwordError"></div>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+    <div class="error" id="genderError"></div>
+
+    <!-- Department -->
+    <label>Department:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="department" value="CSE"> CSE</label>
+      <label><input type="radio" name="department" value="CIVIL"> CIVIL</label>
+      <label><input type="radio" name="department" value="IT"> IT</label>
+      <label><input type="radio" name="department" value="ECE"> ECE</label>
+      <label><input type="radio" name="department" value="MECH"> MECH</label>
+    </div>
+    <div class="error" id="departmentError"></div>
+
+    <!-- Student Photo -->
+    <label>Student Photo:</label>
+    <input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png">
+    <div class="error" id="photoError"></div>
+
+    <!-- Address -->
+    <label>Address:</label>
+    <textarea id="address" name="address"></textarea>
+    <div class="error" id="addressError"></div>
+
+    <br>
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+<script src="form-validation.js"></script>
+</body>
+</html>
